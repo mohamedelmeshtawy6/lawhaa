@@ -63,7 +63,13 @@ class LoginView extends StatelessWidget {
                     SizedBox(
                       height: 20.h,
                     ),
-                    const CustomButtonFeatured()
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      child: CustomButtonFeatured(
+                          textColor: Colors.white,
+                          name: 'تسجيل الدخول',
+                          buttonColor: Color.fromARGB(241, 66, 231, 88)),
+                    )
                   ],
                 ),
               ),

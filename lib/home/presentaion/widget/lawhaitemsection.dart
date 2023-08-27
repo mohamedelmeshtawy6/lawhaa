@@ -22,6 +22,30 @@ class LawhaItemSection extends StatelessWidget {
           postion: 'المدينة المنوره',
           disc: "لوحه مميزه",
         ),
+        Lawhaitem(
+          lawh: "assets/images/lawha.png",
+          price: 120,
+          postion: 'المدينة المنوره',
+          disc: "لوحه مميزه",
+        ),
+        Lawhaitem(
+          lawh: "assets/images/lawha.png",
+          price: 120,
+          postion: 'المدينة المنوره',
+          disc: "لوحه مميزه",
+        ),
+        Lawhaitem(
+          lawh: "assets/images/lawha.png",
+          price: 120,
+          postion: 'المدينة المنوره',
+          disc: "لوحه مميزه",
+        ),
+        Lawhaitem(
+          lawh: "assets/images/lawha.png",
+          price: 120,
+          postion: 'المدينة المنوره',
+          disc: "لوحه مميزه",
+        ),
       ],
     );
   }
