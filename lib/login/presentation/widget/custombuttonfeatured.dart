@@ -7,10 +7,14 @@ class CustomButtonFeatured extends StatelessWidget {
     required this.name,
     required this.buttonColor,
     required this.textColor,
+    this.icon,
+    this.image,
   }) : super(key: key);
   final String name;
   final Color buttonColor;
   final Color textColor;
+  final IconData? icon;
+  final String? image;
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +27,24 @@ class CustomButtonFeatured extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
         onPressed: () {},
         fillColor: buttonColor,
-        child: Text(
-          name,
-          style: TextStyle(
-              color: textColor, fontSize: 18, fontWeight: FontWeight.bold),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            icon == null ? const SizedBox() : Icon(icon),
+            const Spacer(),
+            Text(
+              name,
+              style: TextStyle(
+                  color: textColor, fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const Spacer(),
+            icon == null
+                ? const SizedBox()
+                : Image.asset(
+                    image!,
+                    width: 20,
+                  )
+          ],
         ),
       ),
     );
